@@ -40,7 +40,7 @@ const Dashboard = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const postChecker = () => {
-            const textRegex = /^[\w'\-,.][^_¡÷¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,500}$/i;
+            const textRegex = /^[\w'\-,.][^_¡÷¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,2000}$/i;
             if (textRegex.test(content)) {
                 return true;
             } else {
