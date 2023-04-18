@@ -103,10 +103,10 @@ const Login = () => {
                               <span className="signupLink">Create an account</span>
                           </Link>
                       </p>
-                      <p>
+                      {/* <p>
                           Forgot your password ? Contact{' '}
                           <span>admin@usmandanfodiouniversity.com</span>
-                      </p>
+                      </p> */}
                   </div>
               </article>
           </section>
