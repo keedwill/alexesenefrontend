@@ -40,8 +40,7 @@ const Dashboard = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const postChecker = () => {
-            const textRegex = /^[a-zA-Z]{3,2000}$/;
-            if (textRegex.test(content)) {
+            if (content.length > 0 && content.length <= 2000) {
                 return true;
             } else {
                 alert('Please check content , Maximum of 2000 characters allowed');
