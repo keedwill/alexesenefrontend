@@ -40,14 +40,13 @@ const Dashboard = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const postChecker = () => {
-            const textRegex = /^[a-zA-Z]{3,7000}$/;
+            const textRegex = /^[a-zA-Z]{3,2000}$/;
             if (textRegex.test(content)) {
                 return true;
             } else {
-                alert('Please check the length of the post');
+                alert('Please check content , Maximum of 2000 characters allowed');
                 return false;
             }
-           
         };
 
         if (postChecker()) {
