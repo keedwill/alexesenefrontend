@@ -40,14 +40,14 @@ const Dashboard = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const postChecker = () => {
-            // const textRegex = /^[\w'\-,.][^_¡÷¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/i;
-            // if (textRegex.test(content)) {
-            //     return true;
-            // } else {
-            //     alert('Please check the content of the post');
-            //     return false;
-            // }
-            return true
+            const textRegex = /^[a-zA-Z]{3,7000}$/;
+            if (textRegex.test(content)) {
+                return true;
+            } else {
+                alert('Please check the length of the post');
+                return false;
+            }
+           
         };
 
         if (postChecker()) {
